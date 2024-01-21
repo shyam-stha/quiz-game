@@ -1,0 +1,3 @@
+const navigateHome = () => {
+    router.push("/");
+};

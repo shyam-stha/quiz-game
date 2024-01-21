@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/style/style.css">
+        <link rel="shortcut icon" href="../assets/image/quiz.png" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/style/utility.css">
+        <title>Quiz Game</title>
+    </head>
+
+    <body class="center h-screen">
+        <main class="main-container center">
+            <div class="logo" onclick="navigateHome()">
+                <img src="../assets/image/quiz.png" alt="logo">
+            </div>
+            <button class="save-btn btn" id="save">Save</button>
+            <h2 class="heading">Your Score</h2>
+            <div class="row center flex-col">
+                <h3>Difficulty Level</h3>
+                <button class="btn  btn-level" id="difficulty">Easy</button>
+            </div>
+            <div class="box">
+                <div class="row text-center flex-col">
+                    <section class="score-bar">
+                        <span class="progress-value" id="score">0%</span>
+                    </section>
+                    <h3>Correct</h3>
+                </div>
+                <div class="row text-center flex-col">
+                    <section class="overall-bar">
+                        <span class="progress-value" id="overall">0%</span>
+                    </section>
+                    <h3>Overall Performance</h3>
+                </div>
+                <div class="row text-center flex-col">
+                    <section class="incorrect-bar">
+                        <span class="progress-value" id="incorrect">0%</span>
+                    </section>
+                    <h3>Incorrect</h3>
+                </div>
+            </div>
+        </main>
+
+        <noscript>Please enable your browser script..</noscript>
+        <script src="../script/score.js"></script>
+        <script src="../utils/helper/navigate.js"></script>
+        <script src="../script/common.js"></script>
+    </body>
+
+</html>

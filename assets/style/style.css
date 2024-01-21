@@ -1,0 +1,242 @@
+@import url("variable.css");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 50vw;
+    min-height: 50vh;
+    padding: 25px 5px;
+    position: relative;
+    background-color: var(--light);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.btn-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background-color: var(--success);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn:hover {
+    background-color: var(--dark);
+    cursor: pointer;
+}
+
+.btn-level {
+    text-transform: capitalize;
+}
+
+.score-btn {
+    background-color: var(--primary);
+}
+
+.medium-btn {
+    background-color: var(--secondary);
+}
+
+.hard-btn {
+    background-color: var(--danger);
+}
+
+.question-wrapper {
+    gap: 20px;
+    width: 80%;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.question-section {
+    font-size: 1.3rem;
+}
+
+.option {
+    flex-basis: 48%;
+    text-align: center;
+    background-color: var(--primary);
+    padding: 15px 20px;
+    min-height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+.correct {
+    background-color: var(--success);
+}
+
+.wrong {
+    background-color: var(--danger);
+}
+
+.next-btn {
+    align-self: end;
+    margin-top: 30px;
+}
+
+.box {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 5px;
+}
+
+.score-bar,
+.incorrect-bar,
+.overall-bar {
+    position: relative;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-bar::before,
+.incorrect-bar::before,
+.overall-bar::before {
+    content: "";
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: var(--light);
+}
+
+.score-bar {
+    background-image: conic-gradient(var(--success) 3.6deg, var(--white) 0deg);
+}
+
+.incorrect-bar {
+    background-image: conic-gradient(var(--danger) 3.6deg, var(--white) 0deg);
+}
+
+.overall-bar {
+    background-image: conic-gradient(var(--primary) 3.6deg, var(--white) 0deg);
+}
+
+.progress-value {
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#score {
+    color: var(--success);
+}
+
+#overall {
+    color: var(--primary);
+}
+
+#incorrect {
+    color: var(--danger);
+}
+
+.row {
+    gap: 15px;
+    color: var(--secondary);
+}
+
+.heading {
+    color: var(--secondary);
+    font-size: 1.8rem;
+    letter-spacing: 0.08cap;
+    font-weight: 600;
+}
+
+.save-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.table-container table {
+    width: 90%;
+    margin: auto;
+    background-color: var(--white);
+    padding: 10px 5px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.table-container table tr {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.table-container table th {
+    padding: 5px;
+    color: var(--info);
+    border-bottom: 2px solid var(--info);
+}
+
+.table-container table td {
+    color: var(--secondary);
+    border-right: 2px solid var(--info);
+    border-bottom: 2px solid var(--info);
+    padding: 2px 5px;
+}
+
+.logo {
+    height: 160px;
+    position: absolute;
+    top: -70px;
+    left: -50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.select-container {
+    background-color: var(--secondary);
+    padding: 5px 10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.select-container select {
+    background-color: var(--secondary);
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--white);
+}

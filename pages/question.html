@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/style/style.css">
+        <link rel="stylesheet" href="../assets/style/utility.css">
+        <link rel="shortcut icon" href="../assets/image/quiz.png" type="image/x-icon">
+        <title>Quiz Game</title>
+    </head>
+
+    <body class="center h-screen">
+        <main class="main-container center">
+            <div class="logo" onclick="navigateHome()">
+                <img src="../assets/image/quiz.png" alt="logo">
+            </div>
+            <h2 class="heading">Multiple Choice Question</h2>
+            <div class="flex-col question-wrapper ">
+                <div class="question-section">
+                    <span id="question-no"></span>
+                    <span id="question"></span>
+                </div>
+                <div class="options">
+                    <span id="option-1" class="option" onclick="optionClick(this)"></span>
+                    <span id="option-2" class="option" onclick="optionClick(this)"></span>
+                    <span id="option-3" class="option" onclick="optionClick(this)"></span>
+                    <span id="option-4" class="option" onclick="optionClick(this)"></span>
+                </div>
+
+                <button class="btn next-btn" onclick="nextBtnClick()">Next >></button>
+            </div>
+        </main>
+
+        <noscript>Please enable your browser script..</noscript>
+        <script src="../script/question.js"></script>
+        <script src="../utils/helper/shuffle.js"></script>
+        <script src="../utils/helper/navigate.js"></script>
+        <script src="../script/common.js"></script>
+    </body>
+
+</html>
